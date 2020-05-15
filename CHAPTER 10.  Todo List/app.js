@@ -42,10 +42,10 @@ list.addEventListener('click', e => {
 const filterTodos = (term) => {
     Array.from(list.children)
         .filter((todo) => {
-            return !todo.textContent.includes(term)
+            return !todo.textContent.toLowerCase().includes(term)
         })
 
-        .forEach((todo) => todo.classList.toLowerCase().add('filtered'));
+        .forEach((todo) => todo.classList.add('filtered'));
 
         Array.from(list.children)
         .filter((todo) => {
