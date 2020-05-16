@@ -6,7 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>The DOM</h1>
+    <h1>The Document Objected Model</h1>
+    <ul>
+        <li>The DOM is created by the browser when the HTML Document loads inside it</li>
+        <li>Once the HTML Document is loaded in the browser, the browser creates an object which models this document. This object is called the Document Object</li>
+        <li>It contains many different properties about the HTML Document and many different methods that we can use to interact with the external document</li>
+        <li>Whenever we want to do something like removing an element from the browser, we do that via the Document Object</li>
+    </ul>
+
+    <div>
+        <p>hello world</p>
+        <p>lorem ipsum</p>
+        <p class="error">This is an error message</p>
+    </div>
+
+    <div class="error">
+        this is another error
+    </div>
     <script src="dom.js"></script>
 </body>
 </html>
