@@ -62,3 +62,6 @@ const people = ['Marc', 'John', 'Shaun', 'Brad'];
 people.forEach(person => {
     content.innerHTML += `<p>${person}</p>`
 });
+
+
+// Getting & Setting Attributes
