@@ -26,3 +26,24 @@ console.log(title.previousElementSibling)
 // chaining
 
 console.log(title.nextElementSibling.parentElement.children);
+
+// Click events
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click', () => {
+//     console.log('clicked')
+// })
+
+const items = document.querySelectorAll('li');
+
+items.forEach(item => {
+    item.addEventListener('click', (e) => {
+        // console.log(e);
+        // console.log(e.target);
+        // console.log(item);
+        e.target.style.textDecoration = 'line-through';
+
+    })
+})
+
