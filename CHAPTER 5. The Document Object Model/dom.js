@@ -65,3 +65,18 @@ people.forEach(person => {
 
 
 // Getting & Setting Attributes
+
+const link = document.querySelector('a');
+
+console.log(link.getAttribute('href'))
+
+// Set a new attribute
+
+link.setAttribute('href', 'https://www.google.com/maps/preview');
+link.innerText = 'Google Maps';
+
+const mssg = document.querySelector('.moreErrors');
+
+console.log(mssg.getAttribute('class'));
+
+mssg.setAttribute('class', 'now is success')
