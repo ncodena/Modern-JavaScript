@@ -28,12 +28,20 @@ console.log(title.previousElementSibling)
 console.log(title.nextElementSibling.parentElement.children);
 
 // Click events
+const ul = document.querySelector('ul');
 
-// const button = document.querySelector('button');
+const button = document.querySelector('button');
 
-// button.addEventListener('click', () => {
-//     console.log('clicked')
-// })
+button.addEventListener('click', () => {
+    const li = document.createElement('li');
+    li.textContent = 'something new to do';
+    // append the item at the bottom of the parent
+    // ul.append(li)
+    // append the item at the top
+    ul.prepend(li)
+    
+});
+
 
 const items = document.querySelectorAll('li');
 
@@ -42,8 +50,12 @@ items.forEach(item => {
         // console.log(e);
         // console.log(e.target);
         // console.log(item);
-        e.target.style.textDecoration = 'line-through';
+        // e.target.style.textDecoration = 'line-through';
+        e.target.remove();
 
     })
 })
+
+
+
 
