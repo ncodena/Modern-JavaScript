@@ -79,7 +79,7 @@ const mssg = document.querySelector('.moreErrors');
 
 console.log(mssg.getAttribute('class'));
 
-mssg.setAttribute('class', 'now is success')
+mssg.setAttribute('class', 'now is different')
 
 // Changing CSS Styles
 
@@ -102,4 +102,37 @@ subtitle.style.fontSize = '80px';
 title.style.margin = '';
 
 subtitle.style.fontSize = '';
+
+// Adding & Removing Classes
+
+// const toStyle = document.querySelector('.error2');
+
+// toStyle.classList.add('error3')
+
+// console.log(toStyle.classList)
+
+// toStyle.classList.remove('error3')
+
+// console.log(toStyle.classList)
+
+// toStyle.classList.add('success')
+
+const paraas = document.querySelectorAll('h4');
+
+paraas.forEach(p => {
+    if(p.textContent.includes('error')) {
+        p.classList.add('error2')
+    } else if (p.textContent.includes('success')) {
+        p.classList.add('success');
+    }
+});
+
+// toggling classes
+
+const example = document.querySelector('.titleExample');
+
+example.classList.toggle('test');
+example.classList.toggle('test');
+
+
 
