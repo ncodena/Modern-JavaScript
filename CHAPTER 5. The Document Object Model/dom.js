@@ -55,7 +55,7 @@ paras.forEach(para => {
 
 const content = document.querySelector('.content');
 
-content.innerHTML = '<h2>This is a new h2</h2>';
+content.innerHTML = '<h3>This is a new h3</h3>';
 
 const people = ['Marc', 'John', 'Shaun', 'Brad'];
 
@@ -80,3 +80,26 @@ const mssg = document.querySelector('.moreErrors');
 console.log(mssg.getAttribute('class'));
 
 mssg.setAttribute('class', 'now is success')
+
+// Changing CSS Styles
+
+const subtitle = document.querySelector('h2');
+
+// subtitle.setAttribute('style', 'margin: 50px;')
+
+// Adding extra styles
+
+console.log(subtitle.style);
+
+console.log(subtitle.style.color)
+
+subtitle.style.margin = '50px';
+
+subtitle.style.color = 'blue';
+
+subtitle.style.fontSize = '80px';
+
+title.style.margin = '';
+
+subtitle.style.fontSize = '';
+
