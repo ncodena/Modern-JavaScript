@@ -43,19 +43,28 @@ button.addEventListener('click', () => {
 });
 
 
-const items = document.querySelectorAll('li');
+// const items = document.querySelectorAll('li');
 
-items.forEach(item => {
-    item.addEventListener('click', (e) => {
-        // console.log(e);
-        // console.log(e.target);
-        // console.log(item);
-        // e.target.style.textDecoration = 'line-through';
+// items.forEach(item => {
+//     item.addEventListener('click', (e) => {
+//         // console.log(e);
+//         // console.log(e.target);
+//         // console.log(item);
+//         // e.target.style.textDecoration = 'line-through';
+//         console.log('event in LI')
+//         e.stopPropagation();
+//         e.target.remove();
+        
+
+//     })
+// });
+
+// Event bubbling => the event starts at the event target, then it bubbles up to parents to see if there is any event listeners attached to those to those too. If there is, it is going to fire the callback function for those event listeners as well
+
+ul.addEventListener('click', e => {
+    // console.log(e.target);
+    if(event.target.tagName === 'LI'){
         e.target.remove();
+    }
 
-    })
 })
-
-
-
-
